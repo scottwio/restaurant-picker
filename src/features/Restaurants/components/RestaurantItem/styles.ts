@@ -4,9 +4,8 @@ import Theme from '../../../../styles';
 export default StyleSheet.create({
   container: {
     margin: Theme.Spacing.small,
-    marginBottom: 0,
     backgroundColor: Theme.Colors.white,
-    borderRadius: 6,
+    borderRadius: 8,
     overflow: 'hidden',
   },
   text: {
