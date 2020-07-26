@@ -4,10 +4,17 @@ import {Text as RNText, ViewStyle, StyleSheet, TextStyle} from 'react-native';
 const textVariants: ViewStyle & {[key: string]: any} = StyleSheet.create({
   body: {
     fontSize: 14,
+    lineHeight: 21,
   },
   heading: {
     fontWeight: '600',
     fontSize: 20,
+    lineHeight: 30,
+  },
+  button: {
+    fontSize: 14,
+    fontWeight: '800',
+    lineHeight: 21,
   },
 });
 
@@ -35,5 +42,6 @@ const Text = (props: TextProps & TextCustomProps) => {
 
 Text.Body = (props: TextProps) => <Text {...props} variant="body" />;
 Text.Heading = (props: TextProps) => <Text {...props} variant="heading" />;
+Text.Button = (props: TextProps) => <Text {...props} variant="button" />;
 
 export default Text;

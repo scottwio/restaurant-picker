@@ -21,8 +21,8 @@ const RestaurantItem = ({item, onPress}: RestaurantItemProps) => {
       <Image source={image} style={styles.image} />
       <View style={styles.text}>
         <Text.Heading>{item.name}</Text.Heading>
-        <Text.Body>{address.addressLocality}</Text.Body>
         <Text.Body>{address.streetAddress}</Text.Body>
+        <Text.Body>{address.addressLocality}</Text.Body>
         <Text.Body>{address.postalCode}</Text.Body>
         <Button
           title={'VIEW WEBSITE'}

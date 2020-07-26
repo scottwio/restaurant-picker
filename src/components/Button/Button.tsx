@@ -24,7 +24,7 @@ const Button = ({title, style, testID, onPress}: ButtonProps) => {
       testID={testID}
       android_ripple={{color: Theme.Colors.black, borderless: false}}
       onPress={onPress}>
-      <Text.Body style={styles.text}>{title}</Text.Body>
+      <Text.Button style={styles.text}>{title}</Text.Button>
     </Pressable>
   );
 };
